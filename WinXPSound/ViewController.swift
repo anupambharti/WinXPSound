@@ -50,3 +50,11 @@ class ViewController: NSViewController, AVAudioPlayerDelegate {
 
 }
 
+
+
+import ServiceManagement
+
+func setLaunchAtStartup() {
+    let appBundleIdentifier = "com.anupambharti.WinXPSound" // Replace with your app's bundle identifier
+    SMLoginItemSetEnabled(appBundleIdentifier as CFString, true)
+}
